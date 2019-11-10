@@ -1,38 +1,51 @@
-<h1>Bobs Burgers!</h1>
+<div id = "logo-div">
+ <img src="assets/img/bobsBurgers.png" alt="Italian Trulli">
+ </div>
+<div id = "container">
 
-<h2>Your order is ready!</h2>
-
-<ul>
+<div class="card red darken-2 item-a">
+        <div class="card-content white-text red-background">
+          <span class="card-title">Order up!</span>
+         <ul>
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=true}}
     {{/unless}}
   {{/each}}
 </ul>
+        </div>
+        
+      </div>
 
-<h2>Devoured Burgers</h2>
 
-<ul>
+<div class="card red darken-2 item-b">
+        <div class="card-content white-text red-background">
+          <span class="card-title">Your tummy</span>
+         <ul>
   {{#each burgers}}
     {{#if devoured}}
       {{> burgers/burger-block devoured=false}}
     {{/if}}
   {{/each}}
 </ul>
+        </div>
+        
+      </div>
 
-<h2>Add a burger</h2>
-<form class="create-form">
+
+<div class="card red darken-2 item-c">
+        <div class="card-content white-text red-background">
+          <span class="card-title">Order a Burger</span>
+        <form class="create-form">
 
   <div class="form-group">
     <label for="bu">burger Name:</label>
     <input type="text" id="bu" name="name" >
   </div>
+        </div>
+         <div class="card-action">
+           <button type="submit">Add burger</button>
+        </div>
+      </div>
+</div>
 
-  {{!-- <div class="form-group">
-    <label for="slee">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0"> Awake
-  </div> --}}
-
-  <button type="submit">Add burger</button>
-</form>
