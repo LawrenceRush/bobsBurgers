@@ -1,0 +1,22 @@
+{
+  "name": "uci-irv-fsf-ft-09-2019-u-c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://uci.bootcampcontent.com/UCI-Coding-Bootcamp/UCI-IRV-FSF-FT-09-2019-U-C.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "inquirer": "^7.0.0",
+    "mysql": "^2.17.1"
+  }
+}
